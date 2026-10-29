@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * print_line - Draws a straight line
- * @n: Length of the line
+ * print_line - draws a straight line in the terminal
+ * @n: number of underscores to print
+ *
+ * Return: nothing
  */
 void print_line(int n)
 {
-    int i;
+	int i;
 
-    if (n <= 0)
-        _putchar('\n');
-    else
-    {
-        for (i = 0; i < n; i++)
-            _putchar('_');
-        _putchar('\n');
-    }
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
 }
